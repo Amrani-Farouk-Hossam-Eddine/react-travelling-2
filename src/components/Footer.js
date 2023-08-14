@@ -15,12 +15,12 @@ const Footer = () => {
             <h2 className="text-2xl font-bold text-center lg:text-left m-2">
               BEACHES.
             </h2>
-            <ul className="flex">
-              <li>About</li>
-              <li>Partnership</li>
-              <li>Careers</li>
-              <li>Newsroom</li>
-              <li>Advertising</li>
+            <ul className="flex flex-col justify-center items-center sm:flex-row mx-2 max-w-[270px] sm:w-full">
+              <li className="m-1 sm:m-4">About</li>
+              <li className="m-1 sm:m-4">Partnership</li>
+              <li className="m-1 sm:m-4">Careers</li>
+              <li className="m-1 sm:m-4">Newsroom</li>
+              <li className="m-1 sm:m-4">Advertising</li>
             </ul>
           </div>
           <div>
@@ -31,7 +31,7 @@ const Footer = () => {
               <FaPinterest size={25} className="m-4" />
               <FaYoutube size={25} className="m-4" />
             </div>
-            <ul className="flex justify-center items-center">
+            <ul className="flex flex-col justify-center items-center sm:flex-row mx-2 max-w-[270px] sm:w-full">
               <li>Home</li>
               <li>Destinitions</li>
               <li>Travel</li>

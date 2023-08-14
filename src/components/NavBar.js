@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center h-20 p-4 relative text-white z-10">
-      <h1 className="text-4xl font-bold">Beaches.</h1>
+      <h1 className="text-xl sm:text-2xl md:text-4xl font-bold">Beaches.</h1>
       <ul className="hidden md:flex">
         <li className="p-4">
           <a href="/">Home</a>
@@ -54,21 +54,33 @@ const NavBar = () => {
         }
       >
         <div className="flex justify-between items-center">
-          <h1 className="text-4xl font-bold">Beaches.</h1>
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold">
+            Beaches.
+          </h1>
           <AiOutlineClose size={30} />
         </div>
-        <ul className="flex flex-col py-8 mx-4 font-bold text-xl">
-          <li className="py-4 border-b-[2px] border-black">Home</li>
-          <li className="py-4 border-b-[2px] border-black">Destination</li>
-          <li className="py-4 border-b-[2px] border-black">Travel</li>
-          <li className="py-4 border-b-[2px] border-black">Views</li>
-          <li className="py-4 border-b-[2px] border-black">Book</li>
+        <ul className="flex flex-col py-4 sm:py-8 mx-4 font-bold text-xl">
+          <li className="py-4 border-b-[2px] border-black">
+            <a href="/">Home</a>
+          </li>
+          <li className="py-4 border-b-[2px] border-black">
+            <a href="#destinitions">Destination</a>
+          </li>
+          <li className="py-4 border-b-[2px] border-black">
+            <a href="#travel">Travel</a>
+          </li>
+          <li className="py-4 border-b-[2px] border-black">
+            <a href="#views">Views</a>
+          </li>
+          <li className="py-4 border-b-[2px] border-black">
+            <a href="#book">Book</a>
+          </li>
         </ul>
         <div className="flex flex-col mx-4">
           <button className="my-2 rounded-md">Search</button>
           <button className="my-2 rounded-md">Account</button>
         </div>
-        <div className="py-8 flex justify-between items-center mx-4 text-[var(--primary-dark)]">
+        <div className="py-4 sm:py-8 flex justify-between items-center mx-4 text-[var(--primary-dark)]">
           <FaFacebook size={30} />
           <FaTwitter size={30} />
           <FaInstagram size={30} />
