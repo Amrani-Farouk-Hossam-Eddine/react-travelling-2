@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -22,20 +23,65 @@ const NavBar = () => {
     <div className="flex justify-between items-center h-20 p-4 relative text-white z-10">
       <h1 className="text-xl sm:text-2xl md:text-4xl font-bold">Beaches.</h1>
       <ul className="hidden md:flex">
-        <li className="p-4">
-          <a href="/">Home</a>
+        <li className="p-4 cursor-pointer">
+          <Link
+            to="/"
+            spy={true}
+            smooth={true}
+            duration={100}
+            offset={-50}
+            className="font-bold transition-all duration-300"
+          >
+            Home
+          </Link>
         </li>
-        <li className="p-4">
-          <a href="#destinitions">Destination</a>
+        <li className="p-4 cursor-pointer">
+          <Link
+            to="destinitions"
+            spy={true}
+            smooth={true}
+            duration={100}
+            offset={-50}
+            className="font-bold transition-all duration-300"
+          >
+            Destinition
+          </Link>
         </li>
-        <li className="p-4">
-          <a href="#travel">Travel</a>
+        <li className="p-4 cursor-pointer">
+          <Link
+            to="travel"
+            spy={true}
+            smooth={true}
+            duration={100}
+            offset={-50}
+            className="font-bold transition-all duration-300"
+          >
+            Travel
+          </Link>
         </li>
-        <li className="p-4">
-          <a href="#views">Views</a>
+        <li className="p-4 cursor-pointer">
+          <Link
+            to="views"
+            spy={true}
+            smooth={true}
+            duration={100}
+            offset={-50}
+            className="font-bold transition-all duration-300"
+          >
+            Views
+          </Link>
         </li>
-        <li className="p-4">
-          <a href="#book">Book</a>
+        <li className="p-4 cursor-pointer">
+          <Link
+            to="book"
+            spy={true}
+            smooth={true}
+            duration={100}
+            offset={-50}
+            className="font-bold transition-all duration-300"
+          >
+            Book
+          </Link>
         </li>
       </ul>
       <div className="hidden md:flex">

@@ -1,5 +1,6 @@
 import Video from "../assets/beachVid.mp4";
 import { FaSearch } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -17,12 +18,17 @@ const Hero = () => {
         <p className="py-4 font-bold text-xl sm:text-2xl">
           Top 1% Locations WorldWide
         </p>
-        <form className="w-full bg-white p-2 flex flex-col sm:flex-row justify-between rounded-md">
+        <motion.form
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
+          className="w-full bg-white p-2 flex flex-col sm:flex-row justify-between rounded-md"
+        >
           <input type="text" placeholder="Search Destinations" />
           <button className="rounded-md grid place-content-center">
             <FaSearch />
           </button>
-        </form>
+        </motion.form>
       </div>
     </div>
   );

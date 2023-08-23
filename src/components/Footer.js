@@ -11,20 +11,20 @@ const Footer = () => {
     <div className="w-full bg-slate-100">
       <div className="max-w-[1140px] px-4 py-16 m-auto ">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-end justify-center">
-          <div className="flex flex-col justify-between">
+          <div className="grid place-content-center place-items-center">
             <h2 className="text-2xl font-bold text-center lg:text-left m-2">
               BEACHES.
             </h2>
             <ul className="flex flex-col justify-center items-center sm:flex-row mx-2 max-w-[270px] sm:w-full">
-              <li className="m-1 sm:m-4">About</li>
-              <li className="m-1 sm:m-4">Partnership</li>
-              <li className="m-1 sm:m-4">Careers</li>
-              <li className="m-1 sm:m-4">Newsroom</li>
-              <li className="m-1 sm:m-4">Advertising</li>
+              <li>About</li>
+              <li>Partnership</li>
+              <li>Careers</li>
+              <li>Newsroom</li>
+              <li>Advertising</li>
             </ul>
           </div>
-          <div>
-            <div className="flex justify-center text-[var(--primary-dark)]">
+          <div className="grid place-content-center place-items-center">
+            <div className="flex justify-center text-[var(--primary-dark)] items-center">
               <FaFacebook size={25} className="m-4" />
               <FaTwitter size={25} className="m-4" />
               <FaInstagram size={25} className="m-4" />
